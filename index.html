@@ -147,6 +147,7 @@
   <div class="nav-brand">VOCAB.AI <span>Brand Guidelines</span></div>
   <div class="nav-links">
     <a href="#logo">Logo</a>
+    <a href="#logolinism">Logolinism</a>
     <a href="#color">Color</a>
     <a href="#type">Type</a>
     <a href="#pattern">Pattern</a>
@@ -320,6 +321,367 @@
         <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:20px; filter:drop-shadow(3px 4px 4px rgba(0,0,0,0.45));"><span style="color:var(--ink)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></div>
         <div style="position:absolute; top:12px; left:12px; right:12px; bottom:12px; background:linear-gradient(to top right, transparent calc(50% - 0.5px), oklch(55% 0.18 25) calc(50% - 0.5px), oklch(55% 0.18 25) calc(50% + 0.5px), transparent calc(50% + 0.5px));"></div>
         <div style="font-size:12px; color:var(--muted);">Don't add effects</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- LOGOLINISM -->
+<!-- ============================================================ -->
+<section id="logolinism" class="section" style="background:var(--surface-mid);">
+  <div class="section-label">Logolinism</div>
+  <div class="section-title">Anatomy of the mark, rules for its use.</div>
+  <div class="section-desc">The connected-node mark is a precise geometric construction. These rules ensure it stays consistent everywhere it appears.</div>
+
+  <!-- ── 1. Structure ── -->
+  <div style="margin-top:72px;">
+    <div class="subsection-title" style="margin-bottom:32px;">Structure</div>
+    <div class="grid-2" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;">
+
+      <!-- Construction diagram -->
+      <div style="background:var(--paper); border:1px solid var(--line); padding:32px; position:relative;">
+        <svg viewBox="-20 -14 180 148" width="100%" style="display:block;">
+          <!-- Grid / construction lines -->
+          <line x1="60" y1="-10" x2="60" y2="130" stroke="var(--line)" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="-10" y1="18" x2="140" y2="18" stroke="var(--line)" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="-10" y1="52" x2="140" y2="52" stroke="var(--line)" stroke-width="0.4" stroke-dasharray="2,2"/>
+          <line x1="-10" y1="96" x2="140" y2="96" stroke="var(--line)" stroke-width="0.4" stroke-dasharray="2,2"/>
+
+          <!-- Symmetry axis label -->
+          <text x="63" y="-4" fill="var(--muted)" font-size="5.5" font-family="Inter,sans-serif" letter-spacing="0.03em">axis of symmetry</text>
+
+          <!-- Horizontal baselines at each node (dotted) — angle reference -->
+          <line x1="-12" y1="18" x2="50" y2="18" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.45"/>
+          <line x1="-2" y1="52" x2="64" y2="52" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.45"/>
+          <line x1="70" y1="18" x2="132" y2="18" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.45"/>
+          <line x1="56" y1="52" x2="122" y2="52" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.45"/>
+
+          <!-- Edge extension lines (dotted) — showing slope direction -->
+          <line x1="8.4" y1="-0.5" x2="37.6" y2="70.5" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.35"/>
+          <line x1="18.7" y1="35.5" x2="68.5" y2="108.4" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.35"/>
+          <line x1="111.6" y1="-0.5" x2="82.4" y2="70.5" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.35"/>
+          <line x1="101.3" y1="35.5" x2="51.5" y2="108.4" stroke="var(--orange-500)" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.35"/>
+
+          <!-- Connection lines -->
+          <line x1="16" y1="18" x2="30" y2="52" stroke="var(--teal-500)" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="30" y1="52" x2="60" y2="96" stroke="var(--teal-500)" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="104" y1="18" x2="90" y2="52" stroke="var(--teal-500)" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="90" y1="52" x2="60" y2="96" stroke="var(--teal-500)" stroke-width="2.5" stroke-linecap="round"/>
+
+          <!-- Angle arcs from horizontal baseline to edge — left branch -->
+          <!-- A: arc from horizontal (0°) sweeping down to 67.6° -->
+          <path d="M 30,18 A 14,14 0 0,1 21.3,30.9" fill="none" stroke="var(--orange-500)" stroke-width="0.8"/>
+          <text x="30" y="28" fill="var(--orange-500)" font-size="5.5" font-family="Inter,sans-serif" font-weight="600">67.6&deg;</text>
+          <!-- B: arc from horizontal (0°) sweeping down to 55.7° -->
+          <path d="M 44,52 A 14,14 0 0,1 37.9,63.6" fill="none" stroke="var(--orange-500)" stroke-width="0.8"/>
+          <text x="44" y="62" fill="var(--orange-500)" font-size="5.5" font-family="Inter,sans-serif" font-weight="600">55.7&deg;</text>
+
+          <!-- Angle arcs from horizontal baseline to edge — right branch -->
+          <!-- C: arc from horizontal (180°) sweeping down to 112.4° -->
+          <path d="M 90,18 A 14,14 0 0,0 98.7,30.9" fill="none" stroke="var(--orange-500)" stroke-width="0.8"/>
+          <text x="79" y="28" fill="var(--orange-500)" font-size="5.5" font-family="Inter,sans-serif" font-weight="600">67.6&deg;</text>
+          <!-- D: arc from horizontal (180°) sweeping down to 124.3° -->
+          <path d="M 76,52 A 14,14 0 0,0 82.1,63.6" fill="none" stroke="var(--orange-500)" stroke-width="0.8"/>
+          <text x="65" y="62" fill="var(--orange-500)" font-size="5.5" font-family="Inter,sans-serif" font-weight="600">55.7&deg;</text>
+
+          <!-- Nodes -->
+          <circle cx="16" cy="18" r="5" fill="var(--teal-500)"/>
+          <circle cx="104" cy="18" r="5" fill="var(--teal-500)"/>
+          <circle cx="30" cy="52" r="4.5" fill="var(--teal-500)"/>
+          <circle cx="90" cy="52" r="4.5" fill="var(--teal-500)"/>
+          <circle cx="60" cy="96" r="7" fill="var(--orange-500)"/>
+
+          <!-- Node labels — positioned away from nodes -->
+          <text x="5" y="12" fill="var(--ink)" font-size="6" font-family="Sora,sans-serif" font-weight="700">A</text>
+          <text x="110" y="12" fill="var(--ink)" font-size="6" font-family="Sora,sans-serif" font-weight="700">C</text>
+          <text x="19" y="48" fill="var(--ink)" font-size="6" font-family="Sora,sans-serif" font-weight="700">B</text>
+          <text x="96" y="48" fill="var(--ink)" font-size="6" font-family="Sora,sans-serif" font-weight="700">D</text>
+          <text x="68" y="100" fill="var(--ink)" font-size="6" font-family="Sora,sans-serif" font-weight="700">E</text>
+
+          <!-- Horizontal dimension lines -->
+          <line x1="16" y1="114" x2="16" y2="120" stroke="var(--muted)" stroke-width="0.4"/>
+          <line x1="60" y1="114" x2="60" y2="120" stroke="var(--muted)" stroke-width="0.4"/>
+          <line x1="104" y1="114" x2="104" y2="120" stroke="var(--muted)" stroke-width="0.4"/>
+          <line x1="16" y1="117" x2="60" y2="117" stroke="var(--muted)" stroke-width="0.5"/>
+          <line x1="60" y1="117" x2="104" y2="117" stroke="var(--muted)" stroke-width="0.5"/>
+          <text x="32" y="126" fill="var(--muted)" font-size="5.5" font-family="Inter,sans-serif" text-anchor="middle">44px</text>
+          <text x="82" y="126" fill="var(--muted)" font-size="5.5" font-family="Inter,sans-serif" text-anchor="middle">44px</text>
+
+          <!-- Vertical dimension line -->
+          <line x1="138" y1="18" x2="144" y2="18" stroke="var(--muted)" stroke-width="0.4"/>
+          <line x1="138" y1="96" x2="144" y2="96" stroke="var(--muted)" stroke-width="0.4"/>
+          <line x1="141" y1="18" x2="141" y2="96" stroke="var(--muted)" stroke-width="0.5"/>
+          <text x="150" y="60" fill="var(--muted)" font-size="5.5" font-family="Inter,sans-serif" text-anchor="middle" dominant-baseline="middle">78px</text>
+        </svg>
+      </div>
+
+      <!-- Specs table -->
+      <div>
+        <div style="font-size:15px; color:var(--text-secondary); line-height:1.7; margin-bottom:24px;">Five nodes form two converging branches meeting at a single decision point (E). The mark is perfectly symmetric around its vertical centre axis at x=60.</div>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0; font-weight:600; color:var(--ink);">Node</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">Position</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">Radius</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0; font-weight:600;">A &mdash; top-left</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">(16, 18)</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">7</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0; font-weight:600;">B &mdash; mid-left</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">(30, 52)</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">6</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0; font-weight:600;">C &mdash; top-right</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">(104, 18)</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">7</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0; font-weight:600;">D &mdash; mid-right</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">(90, 52)</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">6</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0; font-weight:600; color:var(--orange-500);">E &mdash; decision</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">(60, 96)</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">9</td>
+          </tr>
+        </table>
+        <table style="width:100%; border-collapse:collapse; font-size:14px; margin-top:24px;">
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0; font-weight:600; color:var(--ink);">Edge</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">Angle</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">Length</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0;">A &rarr; B</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">67.6&deg;</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">36.8</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0;">B &rarr; E</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">55.7&deg;</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">53.3</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0;">C &rarr; D</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">112.4&deg; (mirrored)</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">36.8</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--line);">
+            <td style="padding:10px 0;">D &rarr; E</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">124.3&deg; (mirrored)</td>
+            <td style="padding:10px 0; color:var(--text-secondary);">53.3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 2. Minimum clear space ── -->
+  <div style="margin-top:96px;">
+    <div class="subsection-title" style="margin-bottom:32px;">Minimum clear space</div>
+    <div class="grid-2" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;">
+      <div style="background:var(--paper); border:1px solid var(--line); padding:48px; display:flex; align-items:center; justify-content:center;">
+        <svg viewBox="0 0 280 160" width="100%" style="display:block;">
+          <!-- Outer clearspace box -->
+          <rect x="10" y="10" width="260" height="140" fill="none" stroke="var(--teal-300)" stroke-width="0.8" stroke-dasharray="4,3"/>
+          <!-- Inner logo area -->
+          <rect x="50" y="30" width="180" height="100" fill="none" stroke="var(--teal-500)" stroke-width="0.8"/>
+          <!-- Logo mark (centered) -->
+          <g transform="translate(100,36) scale(0.65)">
+            <line x1="16" y1="18" x2="30" y2="52" stroke="var(--teal-500)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="30" y1="52" x2="60" y2="96" stroke="var(--teal-500)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="104" y1="18" x2="90" y2="52" stroke="var(--teal-500)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="90" y1="52" x2="60" y2="96" stroke="var(--teal-500)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="16" cy="18" r="7" fill="var(--teal-500)"/>
+            <circle cx="104" cy="18" r="7" fill="var(--teal-500)"/>
+            <circle cx="30" cy="52" r="6" fill="var(--teal-500)"/>
+            <circle cx="90" cy="52" r="6" fill="var(--teal-500)"/>
+            <circle cx="60" cy="96" r="9" fill="var(--orange-500)"/>
+          </g>
+          <!-- X annotations -->
+          <text x="28" y="84" fill="var(--teal-500)" font-size="11" font-family="Sora,sans-serif" font-weight="600">X</text>
+          <line x1="40" y1="30" x2="40" y2="10" stroke="var(--teal-300)" stroke-width="0.6"/>
+          <line x1="40" y1="130" x2="40" y2="150" stroke="var(--teal-300)" stroke-width="0.6"/>
+          <text x="14" y="18" fill="var(--teal-300)" font-size="8" font-family="Inter,sans-serif">X</text>
+          <text x="14" y="148" fill="var(--teal-300)" font-size="8" font-family="Inter,sans-serif">X</text>
+          <line x1="50" y1="20" x2="10" y2="20" stroke="var(--teal-300)" stroke-width="0.6"/>
+          <line x1="230" y1="20" x2="270" y2="20" stroke="var(--teal-300)" stroke-width="0.6"/>
+          <text x="248" y="18" fill="var(--teal-300)" font-size="8" font-family="Inter,sans-serif">X</text>
+        </svg>
+      </div>
+      <div>
+        <div style="font-size:15px; color:var(--text-secondary); line-height:1.8;">
+          The minimum clear space around the mark equals <strong style="color:var(--ink);">X</strong> — the height of the full mark — on every side. No text, graphic, edge, or container boundary may enter this zone.
+        </div>
+        <div style="margin-top:20px; display:flex; flex-direction:column; gap:8px;">
+          <div style="display:flex; gap:12px; align-items:baseline; font-size:14px;"><strong style="color:var(--ink); min-width:80px;">Digital icon</strong><span style="color:var(--text-secondary);">min 24px, clearspace 24px</span></div>
+          <div style="display:flex; gap:12px; align-items:baseline; font-size:14px;"><strong style="color:var(--ink); min-width:80px;">Digital lockup</strong><span style="color:var(--text-secondary);">min 96px, clearspace = mark height</span></div>
+          <div style="display:flex; gap:12px; align-items:baseline; font-size:14px;"><strong style="color:var(--ink); min-width:80px;">Print icon</strong><span style="color:var(--text-secondary);">min 0.25 in</span></div>
+          <div style="display:flex; gap:12px; align-items:baseline; font-size:14px;"><strong style="color:var(--ink); min-width:80px;">Print lockup</strong><span style="color:var(--text-secondary);">min 0.75 in</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 3. Usage on background ── -->
+  <div style="margin-top:96px;">
+    <div class="subsection-title" style="margin-bottom:32px;">Usage on background</div>
+    <div class="grid-3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+      <!-- On paper -->
+      <div style="background:var(--paper); border:1px solid var(--line); padding:40px 24px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+        <img src="assets/logo-teal-bold.svg" alt="Logo on light" width="52" height="52">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:18px;"><span style="color:var(--ink)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></div>
+        <div class="label-small" style="color:var(--teal-500);">Paper &mdash; use full color</div>
+      </div>
+      <!-- On dark -->
+      <div style="background:var(--surface-dark); padding:40px 24px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+        <img src="assets/logo-light-bold.svg" alt="Logo on dark" width="52" height="52">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:18px;"><span style="color:oklch(97% 0.006 95)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></div>
+        <div class="label-small" style="color:var(--teal-300);">Dark surface &mdash; use light variant</div>
+      </div>
+      <!-- On teal -->
+      <div style="background:var(--teal-900); padding:40px 24px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+        <img src="assets/logo-light-bold.svg" alt="Logo on teal" width="52" height="52">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:18px;"><span style="color:oklch(97% 0.006 95)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></div>
+        <div class="label-small" style="color:var(--teal-300);">Teal surface &mdash; use light variant</div>
+      </div>
+      <!-- On photography -->
+      <div style="position:relative; background:linear-gradient(135deg, oklch(30% 0.04 240), oklch(45% 0.06 200)); padding:40px 24px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+        <img src="assets/logo-mono-light.svg" alt="Logo on photo" width="52" height="52">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:18px; color:oklch(97% 0.006 95);">VOCAB.AI</div>
+        <div class="label-small" style="color:var(--teal-300);">Photography &mdash; monochrome white</div>
+      </div>
+      <!-- On light photo -->
+      <div style="position:relative; background:linear-gradient(135deg, oklch(88% 0.02 200), oklch(92% 0.01 220)); padding:40px 24px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+        <img src="assets/logo-mono-dark.svg" alt="Logo on light photo" width="52" height="52">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:18px; color:var(--ink);">VOCAB.AI</div>
+        <div class="label-small">Light imagery &mdash; monochrome dark</div>
+      </div>
+      <!-- Never on busy -->
+      <div style="position:relative; background:repeating-conic-gradient(oklch(80% 0.02 200) 0% 25%, oklch(90% 0.01 220) 0% 50%) 0 0 / 20px 20px; padding:40px 24px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+        <div style="position:absolute; top:12px; left:12px; right:12px; bottom:12px; background:linear-gradient(to top right, transparent calc(50% - 0.5px), oklch(55% 0.18 25) calc(50% - 0.5px), oklch(55% 0.18 25) calc(50% + 0.5px), transparent calc(50% + 0.5px));"></div>
+        <img src="assets/logo-teal-bold.svg" alt="Logo on busy bg" width="52" height="52" style="opacity:0.5;">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:18px; color:var(--ink); opacity:0.5;">VOCAB.AI</div>
+        <div class="label-small" style="color:oklch(55% 0.18 25); position:relative;">Never on busy patterns</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 4. Using the VOCAB.AI logo ── -->
+  <div style="margin-top:96px;">
+    <div class="subsection-title" style="margin-bottom:32px;">Using the VOCAB.AI logo</div>
+    <div class="grid-2" style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+      <!-- Do -->
+      <div style="background:var(--paper); border:1px solid var(--line); padding:32px;">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:15px; color:var(--teal-500); margin-bottom:20px;">Do</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:var(--text-secondary); line-height:1.6;">
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Use the provided SVG files &mdash; never recreate the mark.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Maintain the correct aspect ratio at all times.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Use the full-color version wherever possible.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Place on solid, uncluttered backgrounds.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Respect the minimum clearspace (X) on every side.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">Pair the mark with the VOCAB.AI wordmark in Sora 700.</div>
+        </div>
+      </div>
+      <!-- Don't -->
+      <div style="background:var(--paper); border:1px solid var(--line); padding:32px;">
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:15px; color:oklch(55% 0.18 25); margin-bottom:20px;">Don't</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:14px; color:var(--text-secondary); line-height:1.6;">
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Recolor the mark or change the orange accent.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Stretch, skew, rotate, or distort the mark.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Add drop shadows, gradients, outlines, or effects.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Place on visually busy backgrounds or photography without a solid container.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line);">Animate or alter individual nodes.</div>
+          <div style="padding:10px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">Pair with any typeface other than Sora for the wordmark.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 5. Using the logo on marketing collaterals ── -->
+  <div style="margin-top:96px;">
+    <div class="subsection-title" style="margin-bottom:32px;">Using the logo on marketing collaterals</div>
+    <div style="font-size:15px; color:var(--text-secondary); line-height:1.7; max-width:640px; margin-bottom:32px;">When placing the mark on marketing materials, follow these placement rules to ensure brand consistency.</div>
+
+    <div class="grid-3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+      <!-- Presentation slide -->
+      <div style="background:var(--paper); border:1px solid var(--line); overflow:hidden;">
+        <div style="background:var(--surface-dark); padding:24px 20px; aspect-ratio:16/9; display:flex; flex-direction:column; justify-content:space-between;">
+          <img src="assets/logo-light-bold.svg" alt="" width="28" height="28">
+          <div>
+            <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:14px; color:oklch(97% 0.006 95);">Slide title here</div>
+            <div style="font-size:9px; color:var(--teal-300); margin-top:4px;">VOCAB.AI</div>
+          </div>
+        </div>
+        <div style="padding:12px 16px; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted);">Presentation &mdash; top-left mark</div>
+      </div>
+      <!-- Document header -->
+      <div style="background:var(--paper); border:1px solid var(--line); overflow:hidden;">
+        <div style="padding:16px 20px; border-bottom:2px solid var(--teal-500); display:flex; align-items:center; justify-content:space-between;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <img src="assets/logo-teal.svg" alt="" width="20" height="20">
+            <span style="font-family:'Sora',sans-serif; font-weight:700; font-size:11px;"><span style="color:var(--ink)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></span>
+          </div>
+          <div style="font-size:9px; color:var(--muted);">Technical Brief</div>
+        </div>
+        <div style="padding:20px; display:flex; flex-direction:column; gap:6px;">
+          <div style="height:4px; background:var(--line); width:80%; border-radius:2px;"></div>
+          <div style="height:4px; background:var(--line); width:60%; border-radius:2px;"></div>
+          <div style="height:4px; background:var(--line); width:70%; border-radius:2px;"></div>
+        </div>
+        <div style="padding:12px 16px; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted);">Document &mdash; header lockup</div>
+      </div>
+      <!-- Social / banner -->
+      <div style="background:var(--paper); border:1px solid var(--line); overflow:hidden;">
+        <div style="background:var(--teal-900); padding:20px; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; gap:12px;">
+          <img src="assets/logo-light-bold.svg" alt="" width="32" height="32">
+          <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:16px;"><span style="color:oklch(97% 0.006 95)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></div>
+        </div>
+        <div style="padding:12px 16px; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted);">Social &mdash; centred lockup</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 6. "Powered by" attribution mark ── -->
+  <div style="margin-top:96px;">
+    <div class="subsection-title" style="margin-bottom:32px;">"Powered by" attribution mark</div>
+    <div style="font-size:15px; color:var(--text-secondary); line-height:1.7; max-width:640px; margin-bottom:32px;">When third-party partners, integrations, or white-label products use VOCAB.AI technology, display the attribution mark. Do not modify the layout or type treatment.</div>
+
+    <div class="grid-2" style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+      <!-- Light version -->
+      <div style="background:var(--paper); border:1px solid var(--line); padding:48px; display:flex; flex-direction:column; align-items:center; gap:20px;">
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 20px; border:1px solid var(--line); border-radius:6px;">
+          <div style="font-size:11px; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:var(--muted);">Powered by</div>
+          <img src="assets/logo-teal.svg" alt="VOCAB.AI" width="20" height="20">
+          <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:14px;"><span style="color:var(--ink)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></div>
+        </div>
+        <div class="label-small">On light surfaces</div>
+      </div>
+      <!-- Dark version -->
+      <div style="background:var(--surface-dark); padding:48px; display:flex; flex-direction:column; align-items:center; gap:20px;">
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 20px; border:1px solid oklch(30% 0.02 240); border-radius:6px;">
+          <div style="font-size:11px; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:oklch(60% 0.01 220);">Powered by</div>
+          <img src="assets/logo-light.svg" alt="VOCAB.AI" width="20" height="20">
+          <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:14px;"><span style="color:oklch(97% 0.006 95)">VOCAB</span><span style="color:var(--orange-500)">.AI</span></div>
+        </div>
+        <div class="label-small" style="color:var(--text-light);">On dark surfaces</div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px; background:var(--paper); border:1px solid var(--line); padding:28px 32px;">
+      <div style="font-family:'Sora',sans-serif; font-weight:600; font-size:14px; margin-bottom:12px;">Attribution rules</div>
+      <div style="display:flex; flex-direction:column; gap:6px; font-size:14px; color:var(--text-secondary); line-height:1.6;">
+        <div>&bull; &nbsp;Always use the complete "Powered by [mark] VOCAB.AI" lockup &mdash; never just the mark alone.</div>
+        <div>&bull; &nbsp;"Powered by" is set in Inter 500, 11px, uppercase, muted colour.</div>
+        <div>&bull; &nbsp;Minimum mark size in attribution context is 16px.</div>
+        <div>&bull; &nbsp;Do not place inside a container smaller than 180px wide.</div>
+        <div>&bull; &nbsp;The attribution badge must have its own clearspace &mdash; treat the entire badge as a single unit with X/2 padding around it.</div>
       </div>
     </div>
   </div>
